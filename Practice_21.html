@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Controlling CSS with Sass</title>
+        <link rel="stylesheet" type="text/css" href="css/styling.css">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/cycle2.js"></script>
+        <script type="text/javascript" src="js/declarativeToggle.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="top-nav sm-hidden">
+                <nav class="socialmedia group">
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Flipboard</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="subscribe">
+                    <ul>
+                        <li><a href="#">Subscribe to Newsletter</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <div class="title-container">
+                <div class="box-a">
+                    <img src="images/Title.png">
+                </div>
+
+                <div class="box-b group sm-hidden">
+                    <img src="images/judy-garland.jpg" alt="judy-garland">
+                    <a href="#">Subscribe to the Biography Newsletter</a>
+                </div>
+
+                <div class="box-c group sm-hidden">
+                    <img src="images/f_logo_rgb-blue_512.jpg" alt="judy-garland">
+                    <a href="#">Like Biography on Facebook</a>
+                </div>
+            </div>
+
+            <!-- menu-btn for small devices!-->
+            <span data-toggle-target=".sm-device" class="sm-menu-btn">Menu</span>
+                    
+            <div class="sm-device">
+                <div class="sm-device-container">
+                    <form>
+                        <label for="search" class="hide-label">SEARCH</label>
+                        <input type="text" id="search" placeholder="SEARCH"><span></span>
+                    </form>
+    
+                    <div class="sm-nav-1">
+                        <a href="#">Home</a></li>
+                        <a href="#">Biographies</a></li>
+                        <a href="#">News</a></li>
+                        <a href="#">Blog</a></li>
+                        <a href="#">Articles</a></li>
+                        <a href="#">Contact Us</a></li>
+                    </div>
+    
+                    <div class="sm-nav-2">
+                        <a href="#">About </a>
+                        <a href="#">Contact Us</a> 
+                        <a href="#">Advertise</a> 
+                        <a href="#">Privacy Notice</a> 
+                        <a href="#">Terms of Use</a> 
+                        <a href="#">Copyright Policy</a> 
+                        <a href="#">Ad Choices</a>
+                        <a href="#">Accessibility Support</a>  
+                    </div>
+    
+                    <div class="sm-nav-3">
+                            <a href="#" class="fb">Facebook</a>
+                            <a href="#" class="twt">Twitter</a>
+                            <a href="#" class="yt">Youtube</a>
+                            <a href="#" class="inst">Instagram</a>
+                            <a href="#" class="flip">Flipboard</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- end of menu-btn for small devices!-->
+            
+            <div class="middle-nav sm-hidden">
+                <nav class="site-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Biographies</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="menu-btn">Menu</a>
+                
+                <span data-toggle-target=".search-bar" class="search-btn">Search</span>
+            </div>
+
+            <div class="search-bar sm-hidden">
+                <form>
+                    <label for="search" class="hide-label">SEARCH</label>
+                    <input type="text" id="search" placeholder="SEARCH"><span></span>
+                </form>
+            </div>
+            
+        </header>
+
+        
+        <div class="cycle-slideshow" data-cycle-slides=".slides">
+            <span class="cycle-prev">&laquo;</span>
+            <span class="cycle-next">&raquo;</span>
+            <span class="cycle-pager"></span>
+
+            <div class="slides">
+                <img src="images/slide_1.jpg">
+                <div class="slide-txt">
+                    <p>Sachin Tendulkar : The Greatest Batsman of All Time</p>
+                </div>
+                <a href="#">Read &raquo;</a>
+                
+            </div>
+            <div class="slides">
+                <img src="images/slide_2.jpg">
+                <div class="slide-txt">
+                    <p>AR Rahman : Music Legend</p>
+                </div>
+                <a href="#">Read &raquo;</a>
+            </div>
+            <div class="slides">
+                <img src="images/slide_3.jpg">
+                <div class="slide-txt">
+                    <p>Narendra Modi : The True Leader</p>
+                </div>
+                <a href="#">Read &raquo;</a>
+            </div>
+            <div class="slides">
+                <img src="images/slide_4.jpg">
+                <div class="slide-txt">
+                    <p>M.S.Dhoni : Worldcup winning Captain of India</p>
+                </div>
+                <a href="#">Read &raquo;</a>
+            </div>
+        </div>
+            
+        
+    
+
+        <div class="main">
+            <h1 class="center-head">Treding Now</h1>
+            <div class="flex-box-container">
+                <div class="flex-box">
+                    <a href="#"><img src="images/Abdul Kalam.jpg">        
+                    <h3>Abdul Kalam</h3></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur auctor eu augue. Eu turpis egestas pretium aenean pharetra magna ac placerat. Vitae auctor eu augue ut lectus arcu bibendum at. Viverra orci sagittis eu volutpat odio. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Gravida quis blandit turpis cursus.</p>
+                </div>
+
+                <div class="flex-box">
+                    <a href="#"><img src="images/Abdul Kalam.jpg">        
+                    <h3>Abdul Kalam</h3></a>
+                    <p>Viverra orci sagittis eu volutpat odio. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Leo in vitae turpis massa sed elementum tempus egestas. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Sit amet massa vitae tortor condimentum lacinia. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Gravida quis blandit turpis cursus.</p>
+                </div>
+
+                <div class="flex-box">
+                    <a href="#"><img src="images/Abdul Kalam.jpg">        
+                    <h3>Abdul Kalam</h3></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Id aliquet lectus proin nibh nisl condimentum id venenatis. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Sit amet massa vitae tortor condimentum lacinia. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Gravida quis blandit turpis cursus.</p> 
+                </div>
+
+                <div class="flex-box">
+                    <a href="#"><img src="images/Abdul Kalam.jpg">        
+                    <h3>Abdul Kalam</h3></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Eu turpis egestas pretium aenean pharetra magna ac placerat. Vitae auctor eu augue ut lectus arcu bibendum at. Viverra orci sagittis eu volutpat odio. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet.</p>
+                </div>
+            </div>
+            
+            <h1 class="center-head">Most Viwed</h1>
+
+            <div class="flex-box-container">
+                <div class="flex-box">
+                    <a href="#"><img src="images/Narendra Modi.jpg"></a>
+                    <a href="#"><h3>Narendra Modi</h3></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Eu turpis egestas pretium aenean pharetra magna ac placerat. Vitae auctor eu augue ut lectus arcu bibendum at.</p>
+                </div>
+                
+                <div class="flex-box">
+                    <a href="#"><img src="images/MS Dhoni.jpg"></a>
+                    <a href="#"><h3>MS Dhoni</h3></a>
+                    <p>Leo in vitae turpis massa sed elementum tempus egestas. Turpis massa sed elementum tempus. Id aliquet lectus proin nibh nisl condimentum id venenatis. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Sit amet massa vitae tortor condimentum lacinia.</p>
+                </div>
+
+                <div class="flex-box">        
+                    <a href="#"><img src="images/Rajnikanth.jpg"></a>
+                    <a href="#"><h3>Rajnikanth</h3></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Eu turpis egestas pretium aenean pharetra magna ac placerat. Vitae auctor eu augue ut lectus arcu bibendum at.</p>
+                </div>
+        
+                <div class="flex-box">
+                    <a href="#"><img src="images/Ajith Dowal.jpg"></a>
+                    <a href="#"><h3>Ajith Dowal</h3></a>
+                    <p>Viverra orci sagittis eu volutpat odio. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Leo in vitae turpis.Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. Eu turpis egestas pretium aenean pharetra magna ac placerat. Vitae auctor eu augue ut lectus arcu bibendum at.</p>
+                </div>
+        
+                <div class="flex-box">
+                    <a href="#"><img src="images/Narendra Modi.jpg"></a>
+                    <a href="#"><h3>Narendra Modi</h3></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Eu turpis egestas pretium aenean pharetra magna ac placerat. Vitae auctor eu augue ut lectus arcu bibendum at.</p>
+                </div>
+        
+                <div class="flex-box">
+                    <a href="#"><img src="images/MS Dhoni.jpg"></a>
+                    <a href="#"><h3>MS Dhoni</h3></a>
+                    <p>Turpis massa sed elementum tempus. Id aliquet lectus proin nibh nisl condimentum id venenatis. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Sit amet massa vitae tortor condimentum lacinia. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Gravida quis blandit turpis cursus.</p>
+                </div>
+            </div>
+    
+            <div class="newsletter-box">
+                <h1>Biography Newsletter</h1>
+                <p>Subscribe to the Biography newsletter to receive stories about the people who shaped our world and the stories that shaped their lives.</p>
+                <a href="#">Signup</a>
+            </div>
+    
+            <h1 class="center-head">News Articles</h1>
+            <div class="flex-box-container">
+                <div class="flex-box">
+                    <img src="images/news_1.jpg">
+                    <div class="news-box">
+                        <h3>Category</h3>
+                        <h4>The Surprising Reason Lisa Kudrow’s Character on ‘Friends’ Was an Identical Twin</h4>
+                        <p>The actress was already guest-starring as a waitress named Ursula on "Mad About You" when the role of Phoebe came along and producers scrambled to create a connection.</p>
+                        <footer>BY RACHEL CHANGAPR 9, 2020</footer>
+                    </div>
+                </div>
+
+                <div class="flex-box">
+                    <img src="images/news_1.jpg">
+                    <div class="news-box">
+                        <h3>Category</h3>
+                        <h4>The Surprising Reason Lisa Kudrow’s Character on ‘Friends’ Was an Identical Twin</h4>
+                        <p>The actress was already guest-starring as a waitress named Ursula on "Mad About You" when the role of Phoebe came along and producers scrambled to create a connection.</p>
+                        <footer>BY RACHEL CHANGAPR 9, 2020</footer>
+                    </div>
+                </div>
+
+                <div class="flex-box">
+                    <img src="images/news_1.jpg">
+                    <div class="news-box">
+                        <h3>Category</h3>
+                        <h4>The Surprising Reason Lisa Kudrow’s Character on ‘Friends’ Was an Identical Twin</h4>
+                        <p>The actress was already guest-starring as a waitress named Ursula on "Mad About You" when the role of Phoebe came along and producers scrambled to create a connection.</p>
+                        <footer>BY RACHEL CHANGAPR 9, 2020</footer>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex-box-container">
+                <div class="flex-box">
+                    <img src="images/news_1.jpg">
+                    <div class="news-box">
+                        <h3>Category</h3>
+                        <h4>The Surprising Reason Lisa Kudrow’s Character on ‘Friends’ Was an Identical Twin</h4>
+                        <p>The actress was already guest-starring as a waitress named Ursula on "Mad About You" when the role of Phoebe came along and producers scrambled to create a connection.</p>
+                        <footer>BY RACHEL CHANGAPR 9, 2020</footer>
+                    </div>
+                </div>
+
+                <div class="flex-box">
+                    <img src="images/news_1.jpg">
+                    <div class="news-box">
+                        <h3>Category</h3>
+                        <h4>The Surprising Reason Lisa Kudrow’s Character on ‘Friends’ Was an Identical Twin</h4>
+                        <p>The actress was already guest-starring as a waitress named Ursula on "Mad About You" when the role of Phoebe came along and producers scrambled to create a connection.</p>
+                        <footer>BY RACHEL CHANGAPR 9, 2020</footer>
+                    </div>
+                </div>
+
+                <div class="flex-box">
+                    <img src="images/news_1.jpg">
+                    <div class="news-box">
+                        <h3>Category</h3>
+                        <h4>The Surprising Reason Lisa Kudrow’s Character on ‘Friends’ Was an Identical Twin</h4>
+                        <p>The actress was already guest-starring as a waitress named Ursula on "Mad About You" when the role of Phoebe came along and producers scrambled to create a connection.</p>
+                        <footer>BY RACHEL CHANGAPR 9, 2020</footer>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex-box-container">
+                <div class="flex-box">
+                    <img src="images/news_1.jpg">
+                    <div class="news-box">
+                        <h3>Category</h3>
+                        <h4>The Surprising Reason Lisa Kudrow’s Character on ‘Friends’ Was an Identical Twin</h4>
+                        <p>The actress was already guest-starring as a waitress named Ursula on "Mad About You" when the role of Phoebe came along and producers scrambled to create a connection.</p>
+                        <footer>BY RACHEL CHANGAPR 9, 2020</footer>
+                    </div>
+                </div>
+
+                <div class="flex-box">
+                    <img src="images/news_1.jpg">
+                    <div class="news-box">
+                        <h3>Category</h3>
+                        <h4>The Surprising Reason Lisa Kudrow’s Character on ‘Friends’ Was an Identical Twin</h4>
+                        <p>The actress was already guest-starring as a waitress named Ursula on "Mad About You" when the role of Phoebe came along and producers scrambled to create a connection.</p>
+                        <footer>BY RACHEL CHANGAPR 9, 2020</footer>
+                    </div>
+                </div>
+
+                <div class="flex-box">
+                    <img src="images/news_1.jpg">
+                    <div class="news-box">
+                        <h3>Category</h3>
+                        <h4>The Surprising Reason Lisa Kudrow’s Character on ‘Friends’ Was an Identical Twin</h4>
+                        <p>The actress was already guest-starring as a waitress named Ursula on "Mad About You" when the role of Phoebe came along and producers scrambled to create a connection.</p>
+                        <footer>BY RACHEL CHANGAPR 9, 2020</footer>
+                    </div>
+                </div>
+            </div>
+
+            <span data-toggle-target=".more-articles" data-toggle-text="Show Less" class="showmore-btn" >Show More</span>
+
+            <div class="more-articles">
+            
+                <div class="flex-box-container">
+                    <div class="flex-box">
+                        <img src="images/news_1.jpg">
+                        <div class="news-box">
+                            <h3>Category</h3>
+                            <h4>The Surprising Reason Lisa Kudrow’s Character on ‘Friends’ Was an Identical Twin</h4>
+                            <p>The actress was already guest-starring as a waitress named Ursula on "Mad About You" when the role of Phoebe came along and producers scrambled to create a connection.</p>
+                            <footer>BY RACHEL CHANGAPR 9, 2020</footer>
+                        </div>
+                    </div>
+
+                    <div class="flex-box">
+                        <img src="images/news_1.jpg">
+                        <div class="news-box">
+                            <h3>Category</h3>
+                            <h4>The Surprising Reason Lisa Kudrow’s Character on ‘Friends’ Was an Identical Twin</h4>
+                            <p>The actress was already guest-starring as a waitress named Ursula on "Mad About You" when the role of Phoebe came along and producers scrambled to create a connection.</p>
+                            <footer>BY RACHEL CHANGAPR 9, 2020</footer>
+                        </div>
+                    </div>
+
+                    <div class="flex-box">
+                        <img src="images/news_1.jpg">
+                        <div class="news-box">
+                            <h3>Category</h3>
+                            <h4>The Surprising Reason Lisa Kudrow’s Character on ‘Friends’ Was an Identical Twin</h4>
+                            <p>The actress was already guest-starring as a waitress named Ursula on "Mad About You" when the role of Phoebe came along and producers scrambled to create a connection.</p>
+                            <footer>BY RACHEL CHANGAPR 9, 2020</footer>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="site-footer">
+            
+            <div class="sponsor">
+                <h4>Sponsored by:</h4>
+                <img src="images/title2.png">
+            </div>
+
+            <div class="footer-nav sm-hidden">
+                <a href="#">About </a> <span></span>
+                <a href="#">Contact Us</a> <span></span>
+                <a href="#">Advertise</a> <span></span>
+                <a href="#">Privacy Notice</a> <span></span>
+                <a href="#">Terms of Use</a> <span></span>
+                <a href="#">Copyright Policy</a> <span></span>
+                <a href="#">Ad Choices</a> <span></span>
+                <a href="#">Accessibility Support</a>  
+            </div>
+            <p>© 2020 Biography and the Biography logo are registered trademarks of A&E Television Networks, LLC.</p>
+
+        </footer>
+    </body>
+</html>
